@@ -19,19 +19,19 @@ public class ColorChange : MonoBehaviour
   void Update() {
     counter++;
     if(counter >= waitFrames) {
-       int position = Random.Range(0, 3);
-        float value = Random.Range(0.0f, 1.0f);
+      int position = Random.Range(0, 3);
+      float value = Random.Range(0.0f, 1.0f);
 
-        if (position == 0)
-            color.r = value;
-        else if (position == 1)
-            color.g = value;
-        else
-            color.b = value;
+      if (position == 0)
+        color.r = value;
+      else if (position == 1)
+        color.g = value;
+      else
+        color.b = value;
 
-        GetComponent<Renderer>().material.color = color;
+      GetComponent<Renderer>().material.color = color;
 
-        counter = 0;
+      counter = 0;
     }
   }
 }
