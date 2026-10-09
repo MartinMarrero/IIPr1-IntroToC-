@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MoveCube : MonoBehaviour
+public class MoveCubeWithKeysFix : MonoBehaviour
 {
     public float speed;
 
